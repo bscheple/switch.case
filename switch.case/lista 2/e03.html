@@ -1,0 +1,29 @@
+<script>
+    //Problema: Quando o aluno entrar no IFC, ele deverá informar o Curso que está matriculado.
+    //Usando SWITCH...CASE, apresente a seguinte mensagem:
+    //Se Técnico em Informática (I): Bloco B!
+    //Se Técnico em Química (Q): Bloco D!
+    //Se Técnico em Agropecuária (A): Bloco E!
+
+    //ENTRADA
+const curso = prompt("Insira qual curso você está matriculado, caso seja informática (A), caso seja Química (Q) e se você fazer Agropecuria (A)")
+let bloco
+    //PROCESSAMENTO
+switch (curso) {
+    case "I":
+        bloco = "Você terá aula no Bloco B!"
+        break;
+        case "Q":
+        bloco = "Você terá aula no Bloco D!"
+        break;
+        case "A":
+        bloco = "Você terá aula no Bloco E!"
+        break;
+    default:
+      bloco = "Letra Invalída."
+        break;
+}
+    //SAÍDA
+document.write(bloco)
+
+</script>

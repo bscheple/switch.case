@@ -1,0 +1,32 @@
+>meta charset="UTF-8" />
+<script>
+    // PROBLEMA: Idade Humana
+    // É sabido que os caẽs amadurecem mais rapidamente do que os seres humanos (na verdade, alguns seres humanos parecem nunca amadurecer).
+    // Calcule a idade do seu cão, baseada nos seguintes fatores:
+    // - cães de porte pequeno: fator 5
+    // - cães de porte médio: fator 6
+    // - cães grandes: fator 7.
+
+    // ENTRADA
+    const idadeCao = parseInt(prompt("Informe uma idade"))
+    const porte = prompt("Informe um porte P|M|G").toUpperCase()
+    let fatores
+    // PROCESSAMENTO
+    switch (porte) {
+        case "P":
+            fatores = "5"
+            break;
+        case "M":
+        fatores = "6";
+        break;
+        case "G":
+        fatores = "7"
+        break;
+        default:
+            fatores = "letra invalida"
+            break;
+    }
+const idadefinal = idadeCao * fatores
+    // SAÍDA
+    document.write(idadefinal)
+</script>

@@ -1,0 +1,20 @@
+<script>
+    //Problema: Quando o aluno entrar no IFC, ele deverá informar o Curso que está matriculado.
+    //Usando OPERADOR TERNÁRIO, apresente a seguinte mensagem:
+    //Se Técnico em Informática (I): Bloco B!
+    //Se Técnico em Química (Q): Bloco D!
+    //Se Técnico em Agropecuária (A): Bloco E!
+
+    //ENTRADA
+    const curso = prompt("Insira qual curso você está matriculado, caso seja informática (A), caso seja Química (Q) e se você fazer Agropecuria (A)");
+    let saida;
+    //PROCESSAMENTO
+    (curso === "A") ? saida = "Você terá aula no bloco E!"
+    :(curso === "Q") ? saida = "Você terá aula no bloco D!"
+    :(curso === "I") ? saida = "Você terá aula no bloco B!"
+    : saida = (`Letra invalida`);
+      
+
+    //SAÍDA
+document.write(saida)
+</script>
